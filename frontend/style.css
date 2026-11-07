@@ -1,0 +1,149 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #263238;
+    color: white;
+    padding: 20px 5%;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    background: #263238;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #455a64;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #bbb;
+    font: inherit;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 350px;
+    margin: 15px 0;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #eee;
+}
+
+th[data-sort] {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.action-btn {
+    margin: 2px;
+    padding: 7px 10px;
+}
+
+.delete-btn {
+    background: #b71c1c;
+}
+
+.form-section {
+    max-width: 550px;
+}
+
+.form-section[hidden] {
+    display: none;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-section input:not([type="hidden"]) {
+    width: 100%;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#tableMessage,
+#formMessage {
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
